@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(imagens/fundo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 300px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+#dataNascimento{
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+#button{
+    margin: 20px;
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h1{
+    font-size: 41px;
+    margin-bottom: 25px;
+}
+
+label{
+    font-size: 18px;
+}
+
+.rastro {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none; /* Para que o rastro não interfira na interação do mouse */
+    opacity: 0.7; /* Levemente transparente */
+    transition: opacity 0.3s ease; /* Transição suave */
+}
